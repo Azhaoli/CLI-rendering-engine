@@ -1,3 +1,7 @@
+// the functions listed here are no longer accessible through the last version's API, load_bitmap, load_material and load_object have been replaced
+// with newer versions in main.rs for easier debugging, I'm still working on optimizing write_bitmap and write_object
+// this code and the file export API will be fully replaced with a newer version when new implementations of these functions are availible
+
 use crate::mesh::{ Mesh, Texture, Material };
 use crate::{ Vector3D, Point2D, Triangle, Color };
 use std::fs::File;
