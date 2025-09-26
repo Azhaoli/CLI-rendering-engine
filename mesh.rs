@@ -69,7 +69,7 @@ impl Mesh {
 			if z_min > v.Z { z_min = v.Z; }
 			if z_max < v.Z { z_max = v.Z; }
 		}
-		Vector3D::XYZ((x_max-x_min)/2.0, (y_max-y_min)/2.0, (z_max-z_min)/2.0)
+		Vector3D::XYZ((x_max+x_min)/2.0, (y_max+y_min)/2.0, (z_max+z_min)/2.0)
 	}
 	
 	pub fn transform(&mut self, action: Transform) {
